@@ -93,7 +93,7 @@ class GrowlRelay(UDPServer):
     self.outpassword = outpassword
     self.resolver = RendezvousWatcher()
     self.resolver.start()
-    UDPServer.__init__(self,('localhost', GROWL_UDP_PORT), _RequestHandler)
+    UDPServer.__init__(self,('', GROWL_UDP_PORT), _RequestHandler)
   # end def
 
   def server_close(self):
