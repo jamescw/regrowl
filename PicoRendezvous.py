@@ -79,5 +79,5 @@ if __name__ == '__main__':
   print "Starting Unit Test"
   print " - please make sure Growl is listening for network notifications"
   p = PicoRendezvous()
-  print p.query('_growl._tcp.local.')
+  print p.query('_growl._tcp')
   
